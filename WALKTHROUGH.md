@@ -6,6 +6,8 @@ Proyecto completo para extraer, limpiar y analizar sentimientos de comentarios d
 
 ## 🚀 Interfaz Web (Streamlit)
 
+![Interfaz YouTube Comments Analyzer](screenshots/streamlit_interface.png)
+
 Para iniciar la interfaz gráfica:
 
 ```bash

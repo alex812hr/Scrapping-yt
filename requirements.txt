@@ -1,0 +1,9 @@
+google-api-python-client
+pandas
+python-dotenv
+textblob
+wordcloud
+matplotlib
+emoji
+streamlit
+plotly

@@ -9,8 +9,11 @@ class YouTubeScraper:
     def __init__(self, api_key=None):
         self.api_key = api_key or os.getenv('YOUTUBE_API_KEY')
         if not self.api_key:
-            raise ValueError("No API Key found. Set YOUTUBE_API_KEY in .env file.")
-        self.youtube = build('youtube', 'v3', developerKey=self.api_key)
+            # No lanzamos error aquí para permitir que se pase la key en cada llamada si es necesario
+            # Pero la mayoría de métodos la necesitarán
+            pass
+        if self.api_key:
+            self.youtube = build('youtube', 'v3', developerKey=self.api_key)
 
     def get_channel_videos(self, channel_id):
         """Obtiene todos los video IDs de un canal."""
